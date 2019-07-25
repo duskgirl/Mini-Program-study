@@ -1,0 +1,61 @@
+/**app.wxss**/
+
+/* 功能封装：专门用于做间隔的类，设定高度，填充底色 */
+
+.divider {
+  height: 20rpx;
+  background-color: #e9e9e9;
+}
+
+/* 功能封装：细线边框
+ * 移动端边框问题：右边框普通写法占位置，也容易对不齐
+ * 解决办法： 伪元素+定位
+ */
+
+.bdr {
+  position: relative;
+}
+
+.bdr::after {
+  content: "";
+  width: 1rpx;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ccc;
+}
+
+/* 
+ * 功能封装：箭头
+ */
+
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow::after {
+  content: '';
+  width: 15rpx;
+  height: 15rpx;
+  border-right: solid 3rpx #ccc;
+  border-top: solid 3rpx #ccc;
+  transform: rotate(45deg);
+}
+/* 功能封装： 子元素水平居中 */
+.center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 功能封装：列表封装 */
+.cell{
+  font-size:16px;
+  background-color:#fff;
+}
+.cell-item {
+  padding:20rpx 30rpx;
+  border-bottom:solid 1rpx #ddd;
+}

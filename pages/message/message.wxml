@@ -1,0 +1,15 @@
+<view class="card">
+  <text class="card-title">好好学习，天天向上</text>
+  <text class="card-date">2019-7-25</text>
+  <image src="/assets/images/message-banner-01.png" class="card-img" mode="aspectFill"></image>
+  <text class="card-desc">天天进步，学习飞速</text>
+  <text class="card-read arrow">查看详情</text>
+</view>
+
+<view class="card">
+  <text class="card-title">好好学习，天天向上</text>
+  <text class="card-date">2019-7-25</text>
+  <image src="/assets/images/message-banner-01.png" class="card-img" mode="aspectFill"></image>
+  <text class="card-desc">天天进步，学习飞速</text>
+  <text class="card-read arrow">查看详情</text>
+</view>

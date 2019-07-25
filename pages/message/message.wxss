@@ -1,0 +1,42 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.card {
+  padding: 30rpx;
+  margin: 60rpx 20rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 18px;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #dbdbdb;
+  border-bottom: solid 1rpx #ddd;
+  padding: 20rpx 0;
+  margin-bottom: 20rpx;
+}
+
+.card-img {
+  height: 300rpx;
+}
+
+.card-desc {
+  font-size: 16px;
+  border-bottom: solid 1rpx #ddd;
+  padding: 20rpx 0;
+  margin-bottom: 20rpx;
+}
+
+.card-read {
+  font-size: 14px;
+  color: #686868;
+}
+
