@@ -3,11 +3,11 @@
     "pages/index/index",
     "pages/message/message",
     "pages/profile/profile",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/shopList/shopList"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ed702d",
     "navigationBarTitleText": "本地宝",
     "navigationBarTextStyle": "black"
   },

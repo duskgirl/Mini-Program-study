@@ -1,0 +1,27 @@
+.shop {
+	margin:20rpx;
+	display:flex;
+	position:relative;
+	padding-bottom:20rpx;
+	border-bottom: solid 1rpx #ddd;
+}
+.shop-img,
+.shop-img image{
+	width:160rpx;
+	height:160rpx;
+}
+.shop-info{
+	margin-left:20rpx;
+	width:550rpx;
+  overflow: hidden;
+	font-size:14px;
+	line-height:1.4;
+	display: flex;
+	flex-direction: column;
+	color: #777;
+}
+.shop-title {
+  width:360rpx;
+	font-size:18px;
+	color:#333333;
+}

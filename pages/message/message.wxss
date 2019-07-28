@@ -25,6 +25,7 @@ page {
 }
 
 .card-img {
+  width: 100%;
   height: 300rpx;
 }
 
@@ -39,4 +40,3 @@ page {
   font-size: 14px;
   color: #686868;
 }
-

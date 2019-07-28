@@ -62,5 +62,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  checkboxChangeHandle(event){
+    console.log(event)
+    console.log(event.currentTarget.dataset.param)
+    console.log(event.detail.value)
+  },
+  // 自定义事件：关于事件冒泡
+  fatherHandle: function(){
+    console.log('你点击父亲干啥')
+  },
+  sonHandle: function(event){
+    console.log('你点击儿子干啥')
+    console.log(event)
+    console.log('你点击的是第' + event.target.dataset.index+ '个儿子')
   }
 })

@@ -1,0 +1,21 @@
+<view class="shop" wx:for="{{ shopList }}" wx:key="id">
+	<view class="shop-img">
+		<image src="{{ item.images[0] }}" mode="aspectFille"></image>
+	</view>
+	<view class="shop-info">
+		<text class="shop-title ellipsis">{{ item.name }}</text>
+		<text class="ellipsis">电话:{{ item.phone }}</text>
+		<text class="ellipsis">地址:{{ item.address }}</text>
+		<text class="ellipsis">营业时间:{{ item.businessHours }}</text>
+	</view>
+	<view class="star">
+		<view class="star-after">
+      <text>★★★★★</text>
+    </view>
+    <view class="star-before" style="width:{{ item.score }}%">
+      <text>★★★★★</text>
+    </view>
+	</view>
+</view>
+<view class="loadmore loading" wx:if="{{ hasMore }}">正在加载...</view>
+<view class="loadmore" wx:else>已到达我的底线</view>

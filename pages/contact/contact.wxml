@@ -1,31 +1,57 @@
 <view class="divider"></view>
 <view class="cell">
   <navigator class="cell-item arrow">
-   <text>联系方式</text>
+    <text>联系方式</text>
   </navigator>
 </view>
 <view class="divider"></view>
 <view class="cell">
-  <navigator class="cell-item arrow">
-   <text>清除缓存</text>
-  </navigator>
-  <navigator class="cell-item arrow">
-   <text>清除缓存</text>
-  </navigator>
-  <navigator class="cell-item arrow">
-   <text>清除缓存</text>
-  </navigator>
-  <navigator class="cell-item arrow">
-   <text>清除缓存</text>
-  </navigator>
+  <view class="cell-item">
+    <input password placeholder='密码'></input>
+    <button>点我</button>
+  </view>
+  <view class="cell-item">
+    <radio-group>
+      <radio></radio>男
+      <radio></radio>女
+    </radio-group>
+  </view>
+  <view class="cell-item">
+    <checkbox-group bindchange="checkboxChangeHandle" data-param="哈哈">
+      <checkbox value="basketball" checked></checkbox>篮球
+      <checkbox value="football"></checkbox>足球
+      <checkbox value="pingpang"></checkbox>乒乓球
+      <checkbox value="yumao"></checkbox>羽毛球
+    </checkbox-group>
+  </view>
+  <view class="body-view">
+    <switch checked  />
+  </view>
 </view>
 <view class="divider"></view>
 <view class="cell">
   <navigator class="cell-item arrow">
-   <text>清除缓存</text>
+    <text>清除缓存</text>
   </navigator>
   <navigator class="cell-item arrow">
-   <text>清除缓存</text>
+    <text>清除缓存</text>
   </navigator>
 </view>
 
+<wxs module="test">
+  module.exports = {
+    sum: function(a,b){
+      return a+b 
+    }
+  }
+</wxs>
+<text>{{ test.sum(1,5) }}</text>
+<view class="cell">
+  <view class="cell-item arrow">
+    <text>微信小程序事件</text>
+  </view>
+  <view class="father" bindtap='fatherHandle'>父亲
+    <view class="son" data-index='1' catchtap='sonHandle'>儿子1</view>
+    <view class="son" data-index='2' bindtap='sonHandle'>儿子2</view>
+  </view>
+</view>

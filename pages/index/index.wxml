@@ -1,50 +1,18 @@
 <!--首页轮播图分区-->
 <view class="slider">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{imgUrls}}">
+    <block wx:for="{{slidesList}}" wx:key="id">
       <swiper-item>
-        <image src="{{item}}" class="slide-image" mode="aspectFill" />
+        <image src="{{item.image}}" class="slide-image" mode="aspectFill" lazy-load="true" />
       </swiper-item>
     </block>
   </swiper>
 </view>
 <!-- 首页导航分区 -->
 <view class="index-nav">
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-01.png"></image>
-    <text>美食</text>
-  </navigator>
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-02.png"></image>
-    <text>美食</text>
-  </navigator>
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-03.png"></image>
-    <text>美食</text>
-  </navigator>
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-04.png"></image>
-    <text>美食</text>
-  </navigator>
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-05.png"></image>
-    <text>美食</text>
-  </navigator>
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-06.png"></image>
-    <text>美食</text>
-  </navigator>
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-07.png"></image>
-    <text>美食</text>
-  </navigator>
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-08.png"></image>
-    <text>美食</text>
-  </navigator>
-  <navigator class="nav-item bdr">
-    <image src="/assets/icons/grid-09.png"></image>
-    <text>美食</text>
+  <navigator class="nav-item bdr" wx:for="{{categories}}" wx:key="id" url="/pages/shopList/shopList?cat={{item.id}}&title={{item.name}}">
+    <image src="{{item.icon}}" lazy-load="true"></image>
+    <text>{{ item.name }}</text>
   </navigator>
 </view>
 <!-- 间隔区 -->
